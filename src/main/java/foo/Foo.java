@@ -5,7 +5,7 @@ package foo;
  */
 public class Foo {
 
-    private constructor() {
+    private Foo() {
         // Private constructor to hide the implicit public one
     }
 
