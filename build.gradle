@@ -15,6 +15,7 @@ dependencies {
 
 sonarqube {
     properties {
+        property "sonar.forceAuthentication", "true"
         property "sonar.login", "token"
         property "sonar.host.url", "http://163.172.129.11:59000"
         property "sonar.projectName", "Java Gradle-based project analyzed on Custom SonarQube Server using Travis"
