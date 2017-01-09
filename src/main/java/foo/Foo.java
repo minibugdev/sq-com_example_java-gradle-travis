@@ -11,7 +11,7 @@ public class Foo {
 
     public static int div(int a, int b) throws Exception {
     	if (b == 0) {
-    		throw new MyUnsupportedOperationException();
+    		throw new MyUnsupportedOperationException("Can't divide by zero!");
     	}
         return a / b;
     }
