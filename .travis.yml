@@ -8,7 +8,7 @@ addons:
 jdk:
 - oraclejdk8
 script:
-- ./gradlew sonarqube
+- ./gradlew sonarqube -Dsonar.host.url=http://163.172.129.11:59000
 cache:
   directories:
   - $HOME/.m2/repository
