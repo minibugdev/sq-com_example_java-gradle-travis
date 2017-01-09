@@ -12,3 +12,14 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
 }
+
+sonarqube {
+    properties {
+        property "sonar.host.url", "http://163.172.129.11:59000"
+        property "sonar.projectName", "Java Gradle-based project analyzed on Custom SonarQube Server using Travis"
+        property "sonar.projectKey", "com.sonarqube.examples.java-gradle-travis-project"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.sources", "src/main"
+        property "sonar.tests", "src/test"
+    }
+}
